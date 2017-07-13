@@ -8,7 +8,7 @@ Library feature list:
 
  * Easy Si7006 interfacing
  * Relative humidity measurement
- * Temperature measurement in °C and °C
+ * Temperature measurement in °C and °F
  * Not implemented: Reset, Reading Device ID and FW version, Heating
 
 Note: This implementation uses the "Hold Master Mode" approach. This means the sensor holds the I2C clock line low (I2C clock stretching) until a measurement is done.

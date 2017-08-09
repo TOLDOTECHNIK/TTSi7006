@@ -14,8 +14,8 @@ Library feature list:
 Note: This implementation uses the "Hold Master Mode" approach. This means the sensor holds the I2C clock line low (I2C clock stretching) until a measurement is done.
 
 ## History
-2017-07-13 Initial release
-2017-08-09 I2C read delays removed in code
+ * 2017-07-13 Initial release
+ * 2017-08-09 I2C read delays removed in code
 
 ## Installation
 Download the ZIP file and extract its content. Move the TTSi7006 folder to "ARDUINOAPP/hardware/libraries/". In the Arduino IDE you'll find the sample sketches under Samples->TTSi7006.

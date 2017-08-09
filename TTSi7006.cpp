@@ -20,16 +20,12 @@ boolean TTSi7006::isConnected(){
 
 float TTSi7006::readHumidity(){
   float humidity = 0;
-  uint8_t retries = 0;
 
   Wire.beginTransmission(TTSi7006_I2C_ADDRESS);
   Wire.write(TTSi7006_REG_REL_HUM);
   Wire.endTransmission();
   Wire.requestFrom(TTSi7006_I2C_ADDRESS, (byte)2);
-  while(!Wire.available() && retries < 255) {
-    retries ++;
-    delay(1);
-  }
+
   if(Wire.available() > 1){
     humidity = Wire.read() * 256.0 + Wire.read();
     humidity = ((125 * humidity) / 65536.0) - 6;
@@ -40,16 +36,12 @@ float TTSi7006::readHumidity(){
 
 float TTSi7006::readTemperatureC(){
   float temperature = 0;
-  uint8_t retries = 0;
 
   Wire.beginTransmission(TTSi7006_I2C_ADDRESS);
   Wire.write(TTSi7006_REG_TEMP);
   Wire.endTransmission();
   Wire.requestFrom(TTSi7006_I2C_ADDRESS, (byte)2);
-  while(!Wire.available() && retries < 255) {
-    retries ++;
-    delay(1);
-  }
+
   if(Wire.available() > 1){
     temperature = Wire.read() * 256.0 + Wire.read();
     temperature = ((175.72 * temperature) / 65536.0) - 46.85;

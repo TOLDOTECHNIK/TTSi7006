@@ -30,7 +30,6 @@ float TTSi7006::readHumidity(){
     humidity = Wire.read() * 256.0 + Wire.read();
     humidity = ((125 * humidity) / 65536.0) - 6;
   }
-  Serial.println(humidity);
   return humidity;
 }
 

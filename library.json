@@ -1,0 +1,22 @@
+{
+  "name": "TTSi7006",
+  "keywords": "Si7006, sensor, i2c",
+  "description": "Si7006 Arduino Library.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/TOLDOTECHNIK/TTSi7006.git"
+  },
+  "authors":
+  [
+    {
+      "name": "TOLDO TECHNIK",
+      "email": "info@toldotechnik.li",
+      "url": "http://www.toldotechnik.li",
+      "maintainer": true
+    }
+  ],
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}

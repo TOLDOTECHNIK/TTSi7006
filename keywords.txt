@@ -6,13 +6,13 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-TTSi7006		KEYWORD1
+TTSi7006	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-isConnected		KEYWORD2
+isConnected	KEYWORD2
 readHumidity	KEYWORD2
-readTemperatureC		KEYWORD2
-readTemperatureF			KEYWORD2
+readTemperatureC	KEYWORD2
+readTemperatureF	KEYWORD2
